@@ -25,7 +25,7 @@ search.addEventListener("click", () => {
       const movieCard = `
         <div class="movie-card">
           <h2>${data.Title.toUpper()}</h2>
-          <img src="${data.Poster}" alt="">
+          <img src="${data.Poster}" alt="Movie Poster of : ${data.Title}">
           <p><strong>Year:</strong> ${data.Year}</p>
           <p><strong>Rating:</strong> ${data.imdbRating}</p>
         </div>
