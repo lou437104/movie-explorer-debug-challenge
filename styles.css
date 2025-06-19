@@ -1,0 +1,38 @@
+body {
+  font: arial;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0
+}
+
+#main {
+  padding: 40;
+  text-align: cetner;
+}
+
+input, button {
+  padding: 10;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 4px
+}
+
+button {
+  cursor: pointer;
+  background: navy;
+  color: #ffff;
+}
+
+#output {
+  display: flexbox;
+  flex-direction: column;
+  align-item: center;
+  padding-top: 20px
+}
+
+.movie-card {
+  border 1px solid #ddd;
+  margin: 20px;
+  padding: 10px;
+  background-color: #fff
+}
