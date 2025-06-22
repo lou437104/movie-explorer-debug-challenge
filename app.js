@@ -1,4 +1,4 @@
-const search = document.getElementByID('search');
+const search = document.getElementById('search');
 const clearBtn = document.querySelector('#Clear');
 const input = document.querySelector('#movie')
 const output = document.querySelector("output");
