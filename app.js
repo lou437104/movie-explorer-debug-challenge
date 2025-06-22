@@ -1,5 +1,5 @@
 const search = document.getElementByID('search');
-const clearBtn = document.querySelector('#clear');
+const clearBtn = document.querySelector('#Clear');
 const input = document.querySelector('#movie')
 const output = document.querySelector("output");
 
@@ -38,6 +38,6 @@ search.addEventListener("click", () => {
     })
 });
 
-clearBtn.onclick = function() {
+ClearBtn.onclick = function() {
   output.text = "";
 }
