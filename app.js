@@ -31,7 +31,7 @@ search.addEventListener("click", () => {
         </div>
       `;
 
-      output.insertAdjacentElement("beforeend", movieCard);
+      output.insertAdjacentHTML("beforeend", movieCard);
     })
     .catch(err => {
       output.innerHTML = "<p>Something went wrong</p>";
