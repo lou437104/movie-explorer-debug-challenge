@@ -1,6 +1,6 @@
 const search = document.getElementById('#search');
 const clearBtn = document.querySelector('#Clear');
-const input = document.querySelector('#movie')
+const input = document.querySelector('#movie');
 const output = document.querySelector("#output");
 
 const API_KEY = "YOUR_API_KEY_HERE";
