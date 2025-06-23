@@ -41,13 +41,3 @@ search.addEventListener("click", () => {
 clearBtn.onclick = function() {
   output.innerHTML = "";
 }
-<!-- Example structure for index.html -->
-<div class="container">
-  <h1>Movie Explorer</h1>
-  <div class="search-bar">
-    <input type="text" id="movie" placeholder="Enter movie title..." />
-    <button id="search">Search</button>
-    <button id="Clear">Clear</button>
-  </div>
-  <div id="output"></div>
-</div>
