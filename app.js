@@ -39,5 +39,5 @@ search.addEventListener("click", () => {
 });
 
 clearBtn.onclick = function() {
-  output.text = "";
+  output.innerHTML = "";
 }
