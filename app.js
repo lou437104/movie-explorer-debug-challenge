@@ -14,7 +14,7 @@ search.addEventListener("click", () => {
 
   output.innerHTML = "<p>Loading...</p>"
 
-  fetch(`https://omdbapi.com/?t=${query}&apikey=${API_KEY}`)
+  fetch(`https://www.omdbapi.com/?t=${query}&apikey=${API_KEY}`)
     .then(res => res.json()) // <-- Fixed: use .json() as a method
     .then(data => {
       if (data.Response === "False") {
