@@ -15,7 +15,7 @@ search.addEventListener("click", () => {
   output.innerHTML = "<p>Loading...</p>"
 
   fetch(`https://omdbapi.com/?t=${query}&apikey=${API_KEY}`)
-    .then(res => res.json)
+    .then(res => res.json())
     .then(data => {
       if (data.Response = "False") {
         output.innerText = "Movie not found.";
@@ -38,6 +38,6 @@ search.addEventListener("click", () => {
     })
 });
 
-ClearBtn.onclick = function() {
+clearBtn.onclick = function() {
   output.text = "";
 }
