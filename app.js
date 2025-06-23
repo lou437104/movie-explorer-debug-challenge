@@ -17,7 +17,7 @@ search.addEventListener("click", () => {
   fetch(`https://omdbapi.com/?t=${query}&apikey=${API_KEY}`)
     .then(res => res.json()) // <-- Fixed: use .json() as a method
     .then(data => {
-      if (data.Response = "False") {
+      if (data.Response === "False") {
         output.innerText = "Movie not found.";
         return;
       }
