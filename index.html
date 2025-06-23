@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Movie Explorer</title>
+    <title>Movie Explorer - Search Movies Instantly</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Movie Explorer lets you search for movies instantly. Get details, ratings, and posters for your favorite films.">
+    <meta name="keywords" content="movies, search, film, ratings, posters, OMDB">
+    <meta name="author" content="Your Name">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Movie Explorer</h1>
-      <div class="search-bar">
-        <input type="text" id="movie" placeholder="Enter movie title..." />
-        <button id="search">Search</button>
-        <button id="Clear">Clear</button>
-      </div>
-      <div id="output"></div>
-    </div>
+    <main class="container" role="main">
+      <header>
+        <h1>Movie Explorer</h1>
+      </header>
+      <form class="search-bar" role="search" aria-label="Movie search" autocomplete="off" onsubmit="return false;">
+        <label for="movie" class="visually-hidden">Movie Title</label>
+        <input 
+          type="text" 
+          id="movie" 
+          name="movie"
+          placeholder="Enter movie title..." 
+          aria-label="Movie title"
+          required
+        />
+        <button id="search" type="submit" aria-label="Search for movie">Search</button>
+        <button id="Clear" type="button" aria-label="Clear search results">Clear</button>
+      </form>
+      <section id="output" aria-live="polite"></section>
+    </main>
 
     <script src="app.js"></script>
+    <style>
+      /* Visually hidden class for accessibility */
+      .visually-hidden {
+        position: absolute !important;
+        height: 1px; width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+        white-space: nowrap;
+      }
+    </style>
   </body>
 </html>
