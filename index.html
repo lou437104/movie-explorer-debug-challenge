@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="main">
+    <div class="container">
       <h1>Movie Explorer</h1>
-
-      <label for="movie">Search Movie:</label>
-      <input type="text" id="movie" placeholder="Enter movie title" aria-labelledby="movieSearch"/>
-      <button id="search">Find</button>
-      <button id="Clear">Clear</button>
-
-      <div id="output">
-        <!-- Results will show here -->
+      <div class="search-bar">
+        <input type="text" id="movie" placeholder="Enter movie title..." />
+        <button id="search">Search</button>
+        <button id="Clear">Clear</button>
       </div>
+      <div id="output"></div>
     </div>
 
     <script src="app.js"></script>
