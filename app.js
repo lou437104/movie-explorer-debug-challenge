@@ -1,7 +1,7 @@
-const search = document.getElementById('search');
+const search = document.getElementById('#search');
 const clearBtn = document.querySelector('#Clear');
 const input = document.querySelector('#movie')
-const output = document.querySelector("output");
+const output = document.querySelector("#output");
 
 const API_KEY = "YOUR_API_KEY_HERE";
 
